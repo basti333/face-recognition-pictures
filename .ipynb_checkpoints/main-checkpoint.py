@@ -71,7 +71,6 @@ face_recognizer.train(faces, np.array(labels))
 
 w=0
 h=0
-
 def draw_rectangle(img, rect):
     (x, y, w, h) = rect
     cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
@@ -117,11 +116,11 @@ predicted_img4 = predict(test_img4)
 predicted_img5 = predict(test_img5)
 
 #display all images
-cv2.imshow("Prediction1", cv2.resize(predicted_img2, (300, 300)))
-cv2.imshow("Prediction2", cv2.resize(predicted_img3, (300, 300)))
-cv2.imshow("Prediction3", cv2.resize(predicted_img4, (300, 300)))
-cv2.imshow("Prediction4", cv2.resize(predicted_img5, (300, 300)))
-cv2.imshow("Prediction5", cv2.resize(predicted_img1, (300, 300)))
+cv2.imshow("Prediction", cv2.resize(predicted_img2, (300, 300)))
+cv2.imshow("Prediction", cv2.resize(predicted_img3, (300, 300)))
+cv2.imshow("Prediction", cv2.resize(predicted_img4, (300, 300)))
+cv2.imshow("Prediction", cv2.resize(predicted_img5, (300, 300)))
+cv2.imshow("Prediction", cv2.resize(predicted_img1, (300, 300)))
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
